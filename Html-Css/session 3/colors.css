@@ -1,0 +1,27 @@
+.box1{
+    /* background-color: tomato; */
+    background-color: hsl(120, 100%, 0%);
+}
+.box2{
+    /* background-color: limegreen; */
+    /* background-color: #00ff00; */
+    background-color: hsl(120, 100%, 25%);
+}
+.box3{
+    /* background-color: darkgoldenrod; */
+    /* background-color: rgb(140, 90, 30, 0.7); */
+    background-color: hsl(120, 100%, 50%);
+}
+.box4{
+    /* background-color: red; */
+    /* background-color: #A0F4C2; */
+    background-color: hsl(120, 100%, 75%);
+}
+.box5{
+    /* background-color: olive; */
+    /* background-color: #b8aade; */
+    background-color: hsl(120, 100%, 100%);
+}
+.box6{
+    background-color: rgba(144, 73, 162, 0.658);
+}

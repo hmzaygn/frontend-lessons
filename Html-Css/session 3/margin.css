@@ -1,0 +1,30 @@
+*{
+    /* margin: 0; */
+}
+
+.container{
+    background-color: darkorange;
+    margin: 50px;
+}
+
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color: yellow;
+    border: 3px solid blue;
+    /* margin: 20px 50px 80px 15px; */
+    width: 100px;
+    /* genişlik varsa margin:auto çalışır */
+    margin: 20px auto;
+}
+.box3{
+    background-color: magenta;
+    margin-top: 50px;
+    /* marginler üst üste geldiğinde birbirinin içine giriyor */
+}
+
+.box4{
+    background-color: cyan;
+    margin: inherit;
+}
