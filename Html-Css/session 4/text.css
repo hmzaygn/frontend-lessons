@@ -1,0 +1,52 @@
+h2{
+    text-align: center;
+}
+
+#par1{
+    color: blue;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 2rem;
+    column-count: 3;
+    column-rule: 3px dashed red;
+
+}
+
+#par2{
+    color: rgba(255, 0, 0, 1);
+    text-align: right;
+    /* text-decoration: line-through dashed red 5px; */
+    text-transform: lowercase;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+
+}
+
+#par3{
+    color: #6014db;
+    text-align: justify;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px red;
+
+}
+
+#par4{
+    color: hsl(180, 86%, 47%);
+    text-decoration: underline;
+    text-indent: 2rem;
+    letter-spacing: 10px;
+    font-family: 'Yellowtail', cursive;
+
+}
+
+#par5{
+    color: fuchsia;
+    /* text-decoration: overline wavy blue; */
+    word-spacing: 1rem;
+    font-family: 'Yellowtail', cursive;
+
+}
+
+#span1{
+    text-decoration: underline dotted rgb(0, 0, 0);
+}
