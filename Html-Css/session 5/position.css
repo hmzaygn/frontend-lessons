@@ -1,0 +1,57 @@
+.main{
+    width: 100%;
+    background-color:rgb(132, 234, 234) ;
+    height: 1000px;
+    margin: 30px;
+    padding: 5px;
+    position: relative;
+}
+
+.box1{
+    width: 50%;
+    margin: auto;
+    height: 50px;
+    border-radius: 10px;
+    background-color: rgba(25, 0, 255, 0.61);
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(251, 255, 0, 0.67);
+    position: relative;
+    /* top: 20px;
+    left: 30px; */
+}
+.box3{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(255, 0, 191, 0.721);
+    /* position: absolute; */
+    top: 20px;
+    left: 90px;
+}
+
+#icerde{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    font-size: 0.5rem;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+#icerde2{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255, 0, 0);
+    font-size: 0.5rem;
+    color: white;
+    position: sticky;
+    top: 0;
+    left: 50px;
+}
