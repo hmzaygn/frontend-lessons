@@ -1,0 +1,15 @@
+.img-float{
+    width: 40%;
+    float: left;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.par1{
+    background-color: coral;
+    text-align: justify;
+}
+
+.clear{
+    clear: both;
+}
