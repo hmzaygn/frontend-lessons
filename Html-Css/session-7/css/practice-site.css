@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Open Sans";
+}
+
+/* ** NAV-TOP ** */
+.nav-top {
+    background-image: linear-gradient(to right, rgba(224, 172, 172, 0.808), rgba(196, 23, 196, 0.822));
+    height: 6rem;
+}
+
+nav.nav-top img {
+    margin: 9px;
+    width: 60px;
+    border: 1px solid rgb(167, 24, 24);
+    outline: 3px solid red;
+    outline-offset: 3px;
+}
+
+.sign-in {
+    float: right;
+    margin: 2rem 2rem;
+    color: white;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.sign-in a {
+    color: white;
+    text-decoration: none;
+}
+
+.sign-in a:hover {
+    color: black;
+}
+
+.clearfix {
+    clear: both;
+}
+
+/* ** NAV-MAIN ** */
+
+.nav-main {
+    position: sticky;
+    top: 0;
+    background-color: #ffaa53;
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-family: "DynaPuff", cursive;
+    /* height: 6rem; */
+    vertical-align: middle;
+}
+
+.nav-main a {
+    text-decoration: none;
+    color: black;
+    margin-right: 2.5rem;
+    font-weight: 650;
+    font-size: 1.2rem;
+}
+
+.nav-main a:hover {
+    color: white;
+}
+
+.footer-amblem {
+    position: fixed;
+    bottom: 2rem;
+    right: 3rem;
+    background-color: red;
+    font-size: 2rem;
+    color: white;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    text-align: center;
+    padding: 0.3rem;
+}
+
+.footer-amblem:hover {
+    color: black;
+}
+
+main {
+    padding: 2rem;
+    text-align: justify;
+}
+
+main p {
+    font-weight: bolder;
+    font-family: "Open Sans";
+}
