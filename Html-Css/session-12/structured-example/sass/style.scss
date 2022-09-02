@@ -1,0 +1,16 @@
+//***************************************************/
+//* STYLE.SCSS
+//***************************************************/
+
+@use "./base/reset";
+@use "./components/index" as *;
+
+// @import "./abstracts/variables";
+@use "./abstracts/variables" as v;
+
+body {
+  font-family: v.$fontFamily;
+  background-color: v.$bgColor;
+  font-size: v.$fontSize;
+  color: v.$fontColor;
+}
