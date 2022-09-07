@@ -133,7 +133,23 @@ salaries
   .filter((s) => s < 9000)
   .map((s) => Number(Math.trunc(s * 1.1)))
   .forEach((s) => console.log(s));
+
 //* ======================================================
 //*                 REDUCE METHOD
 //* ======================================================
 console.log("****** REDUCE METHOD **********");
+
+// const salaries = [5500, 8000, 6500, 9000, 10000, 15000, 25000];
+
+const sumOfSalaries = salaries.reduce((acc, val) => acc + val);
+
+console.log("SUM :", sumOfSalaries);
+
+//? ÖRNEK: maaşi 9k dan az olanlara %10 zam yap ve zam yapılanların toplam ne kadar ödeme olacağını bul
+
+const sumOfRaisedSal = salaries
+  .filter((s) => s <= 9000)
+  .map((s) => s * 1.1)
+  .reduce((acc, s) => acc + s, 0);
+
+console.log("Sum of Raised Salaries :", sumOfRaisedSal);
