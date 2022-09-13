@@ -234,7 +234,78 @@ for (let [key, value] of Object.entries(people)) {
   console.log([key, value]);
 }
 
-//? people objesindeki tüm maaşları yazdır
-for (let [key, value] of Object.entries(people)) {
-  console.log(`${key} - ${value.salary}`);
+//? people objesindeki tum salary 'leri yazdir
+for (let [k, v] of Object.entries(people)) {
+  console.log(`${k} - ${v.salary}`);
 }
+
+//! ARRAY METOTLARI ILE
+console.log("********");
+Object.keys(people).forEach((p) => console.log(p));
+console.log("********");
+Object.values(people).forEach((p) => console.log(p.surname));
+
+//? job = developer olanlarin dob degelerini yazdiriniz.
+console.log("*** DOB ****");
+Object.values(people)
+  .filter((p) => p.job === "developer")
+  .forEach((p) => console.log(p.dob));
+
+//********************************************************
+//* JSON => Javascript Object Notation
+//********************************************************
+
+const team = [
+  { name: "Josh", surname: "Adams", job: "developer", age: 30 },
+  { name: "Mary", surname: "Bary", job: "tester", age: 22 },
+  { name: "Hazel", surname: "Nut", job: "developer", age: 20 },
+]; //* JSON
+
+console.log(team);
+console.log(team[2]);
+
+//* ÖRNEK: team dizisindeki jobları tek tek yazdır
+
+team.forEach((person) => console.log(person.job));
+
+//* ÖRNEK: age leri 1 arttırarak ayrı bir diziye sakla
+
+const ages = team.map((p) => p.age + 1);
+
+console.log(ages);
+
+//* Ornek3: name ve surname'leri birlestirip buyuk harfe ceviren ve
+//* bunu fullName key'i olarak saklayan, ayni zamanda age degerlerini 5
+//* arttirarak age key'ine saklayan ve olusan diziyi donduren kodu yazınız.
+
+// const teamFullName = team.map((p) => ({
+//   fullName: p.name.toUpperCase() + " " + p.surname.toUpperCase(),
+//   age: p.age + 5,
+// }));
+
+const teamFullName = team.map((p) => {
+  return {
+    fullName: p.name.toUpperCase() + " " + p.surname.toUpperCase(),
+    age: p.age + 5,
+  };
+});
+
+console.log(teamFullName);
+
+//* Ornek4: yaşı 22 den küçük eşit olanların isimlerini listele
+
+const teamUnder22 = team
+  .filter((p) => p.age <= 22)
+  .forEach((p) => console.log(p.name));
+
+//* Ornek5: 22 den küçük ve eşit olanların isimlerini dizide sakla
+
+const arrTeamUnder22 = team.filter((p) => p.age <= 22).map((p) => p.name);
+
+console.log(arrTeamUnder22);
+
+//* Ornek6: ortalama yaşı hesapla
+
+const avgAge =
+  team.reduce((sum, person) => (sum += person.age), 0) / team.length;
+console.log(avgAge);
