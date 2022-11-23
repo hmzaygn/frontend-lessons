@@ -1,6 +1,8 @@
 import * as React from "react";
+import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
@@ -9,9 +11,9 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import MenuListItems from "../components/MenuListItems";
+import { blueGrey } from "@mui/material/colors";
 import useAuthCalls from "../hooks/useAuthCalls";
 import { useSelector } from "react-redux";
-import Button from "@mui/material/Button";
 import { Outlet } from "react-router-dom";
 
 const drawerWidth = 200;
@@ -59,7 +61,7 @@ function Dashboard(props) {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap component="div" sx={{ flexGrow: 1 }}>
-            STOCK APP
+            Stock App
           </Typography>
           {currentUser && (
             <Button color="inherit" onClick={() => logout()}>
@@ -91,7 +93,7 @@ function Dashboard(props) {
           }}
           PaperProps={{
             sx: {
-              backgroundColor: "#212121",
+              backgroundColor: blueGrey[900],
             },
           }}
         >
@@ -108,7 +110,7 @@ function Dashboard(props) {
           }}
           PaperProps={{
             sx: {
-              backgroundColor: "#212121",
+              backgroundColor: blueGrey[900],
             },
           }}
           open
@@ -130,5 +132,4 @@ function Dashboard(props) {
     </Box>
   );
 }
-
 export default Dashboard;
