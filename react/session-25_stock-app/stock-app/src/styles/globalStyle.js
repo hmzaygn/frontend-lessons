@@ -15,15 +15,16 @@ export const modalStyle = {
 };
 export const flexCenter = {
   display: "flex",
+  flexDirection: { xs: "column", sm: "row" },
   justifyContent: "center",
-  gap: 1,
+  alignItems: "center",
+  gap: 2,
 };
 
 export const flexColumn = {
   display: "flex",
   flexDirection: "column",
-  justifyContent: "center",
-  gap: 1,
+  gap: 2,
 };
 
 export const arrowStyle = {
@@ -31,4 +32,10 @@ export const arrowStyle = {
   justifyContent: "center",
   cursor: "pointer",
   "&:hover": { color: "red" },
+};
+
+export const flex = {
+  display: "flex",
+  alignItems: "center",
+  gap: 2,
 };
